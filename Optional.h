@@ -1,3 +1,22 @@
+/******************************************************************************
+ * Keel Optional
+ * ---------------------------
+ * A lightweight, header-only C++17+ optional type implementation.
+ * Inspired by std::optional, providing safe access to values that may or 
+ * may not be present, without dynamic allocations.
+ *
+ * Author: Cihan Bilgihan
+ * Project: https://github.com/tynes0/Keel/
+ * Contact: cihanbilgihan@gmail.com
+ *
+ * License: MIT License
+ * 
+ * This software is provided "as-is", without any express or implied warranty. 
+ * Permission is granted to anyone to use, modify, and distribute this software 
+ * for any purpose, including commercial applications, under the terms of 
+ * the MIT License.
+ ******************************************************************************/
+
 #pragma once
 #ifndef _KEEL_OPTIONAL_H_DEFINED_
 #define _KEEL_OPTIONAL_H_DEFINED_
@@ -10,7 +29,7 @@
 #if __cplusplus >= 202002L
 #define KEEL_CONSTEXPR constexpr
 #else
-#define KEEL_CONSTEXPR
+#define KEEL_CONSTEXPR inline
 #endif
 
 #ifndef KEEL_ASSERT
